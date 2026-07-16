@@ -12,3 +12,7 @@ Thumps.db
 *.njsproj
 *.sln
 *.swp
+
+# Assistant/IDE temporary files
+.claude/
+.gemini/
