@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official landing page and interactive portal for Politeknik Malaysia. Find your course matching SPM grades and explore 36+ campuses across Malaysia.">
+    <title>Politeknik Malaysia | Shape Your Future with TVET Excellence</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="glass-header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 80V40L50 20L80 40V80" stroke="url(#logo-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M50 20V80" stroke="url(#logo-grad)" stroke-width="8" stroke-linecap="round"/>
+                        <circle cx="50" cy="50" r="12" fill="url(#logo-grad)"/>
+                        <defs>
+                            <linearGradient id="logo-grad" x1="20" y1="20" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06B6D4" />
+                                <stop offset="1" stop-color="#7C3AED" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">POLI<span>TECH</span></span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">Pillars</a>
+                <a href="#programs" class="nav-link">Programs</a>
+                <a href="#matchmaker" class="nav-link highlight-menu">Course Matchmaker</a>
+                <a href="#campuses" class="nav-link">Campuses</a>
+                <a href="#testimonials" class="nav-link">Alumni</a>
+                <a href="#apply" class="nav-btn">Apply Now</a>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-glows">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">MALAYSIA'S PREMIER TVET INSTITUTION</div>
+                <h1>The Future of <span>TVET</span> starts here.</h1>
+                <p>Politeknik Malaysia equips students with industry-relevant skills, state-of-the-art technical knowledge, and hands-on experience to thrive in the modern global economy.</p>
+                
+                <div class="hero-cta-group">
+                    <a href="#matchmaker" class="btn btn-primary">Check SPM Eligibility <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+                </div>
+
+                <div class="search-box-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="course-quick-search" placeholder="Search courses (e.g. Mechanical, IT, Hospitality)...">
+                    <div id="search-results-dropdown" class="search-dropdown hidden"></div>
+                </div>
+            </div>
+
+            <!-- Hero Interactive Mockup -->
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-title">POLI STUDENT INTRANET</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-sidebar">
+                            <div class="sidebar-item active"><i class="fa-solid fa-chart-pie"></i> Dashboard</div>
+                            <div class="sidebar-item"><i class="fa-solid fa-book-open"></i> My Courses</div>
+                            <div class="sidebar-item"><i class="fa-solid fa-graduation-cap"></i> Grades</div>
+                            <div class="sidebar-item"><i class="fa-solid fa-briefcase"></i> Internships</div>
+                        </div>
+                        <div class="mockup-main">
+                            <div class="mockup-row">
+                                <div class="mockup-card progress-card">
+                                    <div class="card-label">Semester Progress</div>
+                                    <div class="progress-circle">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="circle" stroke-dasharray="82, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <div class="percentage">82%</div>
+                                    </div>
+                                </div>
+                                <div class="mockup-card stats-mini">
+                                    <div class="card-label">Current GPA</div>
+                                    <div class="gpa-value">3.85</div>
+                                    <span class="badge-gpa"><i class="fa-solid fa-arrow-up"></i> Dean's List</span>
+                                </div>
+                            </div>
+                            <div class="mockup-card full-width">
+                                <div class="card-label">Upcoming Classes</div>
+                                <div class="class-item">
+                                    <div class="class-dot it"></div>
+                                    <div class="class-info">
+                                        <div class="class-name">Advanced Web Engineering</div>
+                                        <div class="class-time">09:00 AM - 11:00 AM | Lab A</div>
+                                    </div>
+                                </div>
+                                <div class="class-item">
+                                    <div class="class-dot design"></div>
+                                    <div class="class-info">
+                                        <div class="class-name">UI/UX Design Studio</div>
+                                        <div class="class-time">02:00 PM - 04:00 PM | Studio 2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <div class="stat-num" data-val="36">0</div>
+                <div class="stat-lbl">Strategic Campuses Nationwide</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num" data-val="100000">0</div>
+                <div class="stat-lbl">Successful TVET Graduates</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num" data-val="95" data-suffix="%">0</div>
+                <div class="stat-lbl">Graduate Employability Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num" data-val="250" data-suffix="+">0</div>
+                <div class="stat-lbl">Industry Partner Corporations</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Pillars -->
+    <section id="about" class="pillars-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose <span>Politeknik Malaysia</span>?</h2>
+                <p>We redefine technical and vocational education, bridging the gap between theoretical knowledge and real-world industrial demand.</p>
+            </div>
+            
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-industry"></i></div>
+                    <h3>Industry-Driven Curriculum</h3>
+                    <p>Designed in partnership with top industrial organizations (Intel, PETRONAS, Gamuda) to match current and future career paths.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>State-of-the-Art Labs</h3>
+                    <p>Learn using industry-standard tools, machinery, software, and simulation labs that replicate actual working environments.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Global Accreditation</h3>
+                    <p>Our diploma and degree programs are accredited by the Malaysian Qualifications Agency (MQA) and recognized globally.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h3>High Employability</h3>
+                    <p>Through our mandatory industry internships and job-matching platforms, over 95% of graduates secure jobs within 6 months.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPM Eligibility Matchmaker App -->
+    <section id="matchmaker" class="matchmaker-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>SPM Course <span>Eligibility Matchmaker</span></h2>
+                <p>Enter your SPM grades below to instantly view which Politeknik diplomas and disciplines you are qualified to apply for.</p>
+            </div>
+
+            <div class="matchmaker-app-box">
+                <div class="matchmaker-grid">
+                    <!-- Form Side -->
+                    <div class="form-container">
+                        <h3><i class="fa-solid fa-sliders"></i> Input SPM Grades</h3>
+                        <form id="matchmaker-form">
+                            <div class="form-group-row">
+                                <div class="form-control">
+                                    <label for="grade-bm">Bahasa Melayu</label>
+                                    <select id="grade-bm" required>
+                                        <option value="A+">A+</option>
+                                        <option value="A" selected>A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+                                <div class="form-control">
+                                    <label for="grade-sej">Sejarah</label>
+                                    <select id="grade-sej" required>
+                                        <option value="A+">A+</option>
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+" selected>B+</option>
+                                        <option value="B">B</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-control">
+                                    <label for="grade-math">Mathematics</label>
+                                    <select id="grade-math" required>
+                                        <option value="A+">A+</option>
+                                        <option value="A" selected>A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+                                <div class="form-control">
+                                    <label for="grade-eng">English</label>
+                                    <select id="grade-eng" required>
+                                        <option value="A+">A+</option>
+                                        <option value="A">A</option>
+                                        <option value="A-" selected>A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-control">
+                                    <label for="grade-sci">Science / Physics</label>
+                                    <select id="grade-sci" required>
+                                        <option value="A+">A+</option>
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+" selected>B+</option>
+                                        <option value="B">B</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+                                <div class="form-control">
+                                    <label for="grade-addmath">Add Mathematics <small>(Optional)</small></label>
+                                    <select id="grade-addmath">
+                                        <option value="NONE">Not Taken</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="G">G</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="stream">Secondary School Stream</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="stream" value="science" checked> Science / Technical
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="stream" value="art"> Arts & Commerce
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary full-width">Find Eligible Courses <i class="fa-solid fa-graduation-cap"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Results Side -->
+                    <div class="results-container">
+                        <div class="results-placeholder" id="results-placeholder-box">
+                            <div class="placeholder-icon">
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="40" stroke="#1E293B" stroke-width="4" stroke-dasharray="8 8"/>
+                                    <path d="M50 30V50L62 62" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h4>Awaiting Inputs</h4>
+                            <p>Fill in your SPM grades and click "Find Eligible Courses" to calculate your qualification score and see matching polytechnic courses.</p>
+                        </div>
+
+                        <div class="results-content hidden" id="results-content-box">
+                            <div class="results-summary">
+                                <h3><i class="fa-solid fa-circle-check text-success"></i> Match Results</h3>
+                                <div class="score-pill">Eligibility Index: <span id="eligibility-index">100%</span></div>
+                            </div>
+                            
+                            <p class="results-intro">Based on your results, you meet the requirements for the following pathways:</p>
+                            
+                            <div class="result-categories" id="results-categories-list">
+                                <!-- Dynamic items inject here -->
+                            </div>
+
+                            <div class="results-cta">
+                                <p>Ready to make it official? Apply via MoHE's UPUOnline when admissions open.</p>
+                                <a href="https://upu.mohe.gov.my" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">Go to UPUOnline <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Programs Section -->
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Browse <span>Academic Disciplines</span></h2>
+                <p>Politeknik Malaysia offers over 80 diplomas and advanced degree programs across multiple cutting-edge faculties.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs-container">
+                <button class="tab-btn active" data-category="all">All Fields</button>
+                <button class="tab-btn" data-category="engineering">Engineering</button>
+                <button class="tab-btn" data-category="it">Info Tech & Coding</button>
+                <button class="tab-btn" data-category="commerce">Commerce & Hospitality</button>
+                <button class="tab-btn" data-category="design">Design & Arts</button>
+            </div>
+
+            <!-- Programs Grid -->
+            <div class="programs-grid" id="programs-display-grid">
+                <!-- Program Cards will be dynamically rendered or filtered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Campus Locator Map Section -->
+    <section id="campuses" class="campuses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find a Campus <span>Near You</span></h2>
+                <p>With 36 polytechnics strategically located across every state in Malaysia, quality education is always within reach.</p>
+            </div>
+
+            <div class="campus-layout">
+                <!-- Left: State Filter -->
+                <div class="campus-sidebar">
+                    <h3>Select State</h3>
+                    <ul class="state-list">
+                        <li class="state-item active" data-state="all">All States</li>
+                        <li class="state-item" data-state="central">Kuala Lumpur & Selangor</li>
+                        <li class="state-item" data-state="northern">Perlis, Kedah, Penang, Perak</li>
+                        <li class="state-item" data-state="southern">Negeri Sembilan, Melaka, Johor</li>
+                        <li class="state-item" data-state="eastern">Pahang, Terengganu, Kelantan</li>
+                        <li class="state-item" data-state="borneo">Sabah & Sarawak</li>
+                    </ul>
+                </div>
+
+                <!-- Right: Campus Grid -->
+                <div class="campus-grid-wrapper">
+                    <div class="campus-grid" id="campus-display-grid">
+                        <!-- Dynamic Campus Cards will go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni Success Testimonials Slider -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Alumni <span>Success Stories</span></h2>
+                <p>See where our graduates have ended up. Our practical TVET education opens doors to leading multinational corporations globally.</p>
+            </div>
+
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider" id="testimonial-slider-track">
+                    <!-- Slides (dynamic or hardcoded) -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"The hands-on lab sessions at Politeknik Shah Alam gave me an immediate advantage when I started as a junior engineer. I was already familiar with the industrial microcontrollers and CAD tools that the company used."</p>
+                            <div class="alumni-meta">
+                                <div class="alumni-avatar bg-violet">AM</div>
+                                <div class="alumni-info">
+                                    <h4>Ahmad Muaz</h4>
+                                    <p>Senior Embedded Systems Engineer, Intel Malaysia</p>
+                                    <span class="alumni-edu">Dip. Electronic Engineering (Computer) | Class of 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"Politeknik didn't just teach me coding; they taught me agile development, database design, and real-world system testing. The compulsory 6-month internship led directly to a full-time software developer offer."</p>
+                            <div class="alumni-meta">
+                                <div class="alumni-avatar bg-cyan">SY</div>
+                                <div class="alumni-info">
+                                    <h4>Sarah Yeoh</h4>
+                                    <p>Frontend Engineer, Grab Singapore</p>
+                                    <span class="alumni-edu">Dip. Information Technology (Software) | Class of 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"The culinary arts facilities at Politeknik Metro Kuantan are professional-grade. The lecturers are experienced chefs who push you to create world-class menus. I felt fully prepared when opening my own bakery."</p>
+                            <div class="alumni-meta">
+                                <div class="alumni-avatar bg-accent">FI</div>
+                                <div class="alumni-info">
+                                    <h4>Farhan Ibrahim</h4>
+                                    <p>Founder & Head Chef, The Artisan Crust</p>
+                                    <span class="alumni-edu">Dip. Culinary Arts | Class of 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Indicators -->
+                <div class="slider-controls">
+                    <button class="slider-arrow prev" id="slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="slider-dots-container"></div>
+                    <button class="slider-arrow next" id="slider-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process Timeline -->
+    <section id="apply" class="apply-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to <span>Apply</span></h2>
+                <p>Get ready for your admission. We accept applications twice a year during the main academic intakes.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>Check Entry Requirements</h3>
+                        <p>Use our interactive <a href="#matchmaker">Course Matchmaker</a> above or view the official requirements handbook to see if you match the courses of your choice.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>Prepare SPM Results & Certificates</h3>
+                        <p>Get soft copies of your SPM slip, identity card, school leaving certificate, and co-curricular records ready for online upload.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>Submit Application via UPU</h3>
+                        <p>Fill out the application online at the Ministry of Higher Education portal (UPUOnline). Select your top Politeknik choices.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3>Offer Acceptance & Enrollment</h3>
+                        <p>Once selected, download your official offer letter, complete the medical report, pay the affordable tuition fees online, and register at your assigned campus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apply-footer-cta">
+                <div class="glass-card apply-banner">
+                    <div class="apply-banner-text">
+                        <h3>Ready to Shape Your Career?</h3>
+                        <p>Enrollment is open for the upcoming semester. Affordable fees, high-quality TVET education, and a direct path to employment.</p>
+                    </div>
+                    <a href="https://upu.mohe.gov.my" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Apply Now via UPU <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 80V40L50 20L80 40V80" stroke="#06B6D4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M50 20V80" stroke="#06B6D4" stroke-width="8" stroke-linecap="round"/>
+                            <circle cx="50" cy="50" r="12" fill="#7C3AED"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">POLI<span>TECH</span></span>
+                </div>
+                <p class="footer-desc">Empowering nation-building through high-quality technical, vocational, and lifelong training for the digital industrial age.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Study Fields</h4>
+                <ul>
+                    <li><a href="#programs">Engineering</a></li>
+                    <li><a href="#programs">Information Technology</a></li>
+                    <li><a href="#programs">Commerce & Business</a></li>
+                    <li><a href="#programs">Hospitality & Tourism</a></li>
+                    <li><a href="#programs">Creative Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#matchmaker">SPM Eligibility Matchmaker</a></li>
+                    <li><a href="#campuses">Find Campus</a></li>
+                    <li><a href="#testimonials">Success Stories</a></li>
+                    <li><a href="https://upu.mohe.gov.my">UPU Portal</a></li>
+                    <li><a href="https://mypolycc.edu.my/">JPPKK Ministry Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="contact-info"><i class="fa-solid fa-location-dot"></i> Department of Polytechnic & Community College Education (JPPKK), Galeria PjH, Putrajaya, Malaysia.</p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> +603-8888 2000</p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i> admin@mypolycc.edu.my</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Politeknik Malaysia. Developed for educational reference. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# OS-specific files
+.DS_Store
+Thumps.db
+.Spotlight-V100
+.Trashes
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
